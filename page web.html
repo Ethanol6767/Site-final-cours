@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><span class="couleur_rouge">Contrôle de flux d'éxecution</span></h1>
+   <hr>
+    <h2>1) Introduction</h2>
+    <p class="alinea"> Jusqu’à présent, nous avons vu des algorithmes simples qui se déroulent en séquence de la
+        première
+        à la dernière instruction. Cependant, ces instructions en séquence ne suffisent pas à exécuter des
+        algorithmes plus complexes où :
+    </p>
+    <ul>Certaines séquences d’instructions ne peuvent être exécutées que sous certaines conditions :
+        structures conditionnelles (if... else)
+    </ul>
+    <ul>Certaines séquences d’instructions nécessitent d’être exécutées un certain nombre de fois :
+        structures itératives (boucle for et boucle while)
+    </ul>
+    <p class="alinea">Le chemin suivi par le programme est appelé le flux d’exécution et les instructions qui le
+        modifient
+        sont appelées les instructions de contrôle de flux.
+    </p>
+    <h2>2) Structures conditionnelles</h2>
+    <h3>2.1) L’instruction conditionnelle Si</h3>
+    <p>Dans certains cas, on ne veut exécuter une instruction que sous une condition
+    </p>
+    <img class="image" src="img/capture1.png" alt="erreur" width="400">
+    <p><span class="ordi">Synthèse :</span> :
+    </p>
+    <img class="image" src="img/capture2.png" alt="erreur">
+    <p>Après avoir tapé <span class="couleur_vert">if</span> (condition) et appuyé sur entrée, l’éditeur va alors automatiquement indenter (décalage vers
+        la droite) les lignes d’instructions suivantes. En effet, toutes les instructions
+        qui doivent être effectuées si la condition est vraie doivent être indentées, et elles doivent avoir
+        impérativement la même indentation.
+    </p>
+    <p><span class="ordi">Exemple : </span>le programme suivant affiche "candidat reçu" mais uniquement que celui-ci ait
+        une
+        moyenne supérieure ou égale à 10 :
+    </p>
+    <iframe src="https://trinket.io/embed/python/4efc458943" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+    </iframe>
+    <h3>2.2) L’évaluation de la condition</h3>
+    <p class="alinea">En fait la condition évaluée m>=10 renvoie un booléen : <span class="couleur_vert">True</span> (vrai) ou <span class="couleur_vert">False</span> (faux). Il est
+        possible de le vérifier en rajoutant l’instruction suivante en fin de programme :
+    </p>
+    <iframe src="https://trinket.io/embed/python/edba0afc61" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+    </iframe>
+    <h3>2.3) Opérateurs de comparaison et opérateurs logiques</h3>
+    <p class="alinea">Afin d’écrire une condition, on utilise les opérateurs de comparaison suivants :
+    </p>
+    <style type="text/css">
+        .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+        .tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+        .tftable tr {background-color:#d4e3e5;}
+        .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+        .tftable tr:hover {background-color:#ffffff;}
+        </style>
+        
+        <table class="tftable" border="1">
+        <tr><th>Opérateur</th><th>Signification littéraire</th></tr>
+        <tr><td> < </td><td>strictement inférieur à</td></tr>
+        <tr><td> > </td><td>strictement supérieur à</td></tr>
+        <tr><td> <= </td><td>inférieur ou égal à</td></tr>
+        <tr><td> >= </td><td>supérieur ou égal à</td></tr>
+        <tr><td> == </td><td>égal à</td></tr>
+        <tr><td> != </td><td>différent de</tr>
+        </table>
+    <p><span class="ordi">Attention :</span> l’égalité de deux valeurs est exprimée avec l’opérateur « == » et non « = ». Ce dernier
+        est en effet l’opérateur d’affectation et ne doit pas être utilisé dans une condition.</p>
+    <p>Plus d'information <a href="page web reliée.html">ici</a></p>
+
+    $$ {J(\theta) =\frac{1}{2m} [\sum^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j} $$
+
+</body>
+
+</html>
