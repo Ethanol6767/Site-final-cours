@@ -1,0 +1,21 @@
+.couleur_rouge{
+    color: red;
+}
+
+.couleur_vert{
+    color: green;
+}
+
+.alinea{
+    text-indent: 20px; 
+}
+
+.ordi{
+    text-decoration: underline;
+}
+
+body{
+    margin: 1.5cm;
+    border: 0.1cm solid black;
+    padding: 1cm;
+}
