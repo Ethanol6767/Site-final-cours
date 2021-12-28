@@ -2,6 +2,50 @@
     color: red;
 }
 
+h2{
+    color: green;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td{
+    text-align: center;
+}
+
+.header img{
+    float: right;
+    width: 70px;
+    height: 70px;
+    background: white;
+}
+  
+.header h1{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: red;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.centre{
+    text-align: center;
+}
+
 .couleur_vert{
     color: green;
 }
@@ -12,10 +56,15 @@
 
 .ordi{
     text-decoration: underline;
+    font-weight: bold;
+}
+
+html{
+    background-color: darkred;
 }
 
 body{
-    margin: 1.5cm;
+    margin: 1.5cm; background-color: white;
     border: 0.1cm solid black;
     padding: 1cm;
 }
