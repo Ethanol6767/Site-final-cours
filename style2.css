@@ -6,6 +6,10 @@ h2{
     color: green;
 }
 
+h3{
+    color: blue;
+}
+
 .image{
     display: block;
     margin-left: auto;
@@ -48,6 +52,7 @@ td{
 
 .couleur_vert{
     color: green;
+    font-weight: bold;
 }
 
 .alinea{
@@ -67,4 +72,8 @@ body{
     margin: 1.5cm; background-color: white;
     border: 0.1cm solid black;
     padding: 1cm;
+}
+
+h4{
+    color: lightseagreen;
 }
