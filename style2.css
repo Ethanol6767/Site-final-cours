@@ -2,12 +2,21 @@
     color: red;
 }
 
+.dark-mode {
+    background-color: rgb(17, 17, 17);
+    color: white;
+  }
+
 h2{
     color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h3{
     color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .image{
@@ -26,23 +35,18 @@ p{
 td{
     text-align: center;
 }
-
-.header img{
-    float: right;
-    width: 70px;
-    height: 70px;
-    background: white;
-}
   
-.header h1{
-    position: relative;
-    top: 10px;
-    left: 10px;
+header
+{
+position: relative;
+}
+
+
+h1{
     color: red;
-    text-align: center;
     display: inline-block;
     font-weight: bold;
-    text-align: center;
+    margin-top: 10px;
 }
 
 .centre{
@@ -68,8 +72,8 @@ html{
 }
 
 body{
-    margin: 0cm; background-color: white;
     border: 0.1cm solid black;
+    margin: 0cm;
     padding: 1cm;
 }
 
