@@ -10,34 +10,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="16x16" href="img/1200px-Python-logo-notext.svg.png">
+
     <title>Contrôle de flux d'éxécution</title>
 </head>
 
 <body>
+    <button onclick="myFunction()">Dark mode</button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
+<header>
+    <h1>Contrôle de flux d'éxécution</h1>
+</header>
 
-    <div class="header">
-        <img src="img/1200px-Python-logo-notext.svg.png" alt="logo" />
-        <h1>Contrôle de flux d'éxecution</h1>
-    </div>
-    <hr>
-    <div class="col-lg-12 col-md-12 col-xs-12">
+<div class="col-lg-12 col-md-12 col-xs-12">
     <h2>1) Introduction</h2>
     <p class="alinea"> Jusqu’à présent, nous avons vu des algorithmes simples qui se déroulent en séquence de la
         première
@@ -58,8 +50,7 @@
     <h2>2) Structures conditionnelles</h2>
     <h3>2.1) L’instruction conditionnelle Si</h3>
     <p>Dans certains cas, on ne veut exécuter une instruction que sous une condition
-    </p>
-    </div>
+    </p></div>
     <div class="col-lg-12 col-md-12 col-xs-12">
         <div class="text-center">
             <img class="img-fluid" src="img/capture1.png" alt="erreur" width=500px>
@@ -74,65 +65,7 @@
             <img class="img-fluid" class="image" src="img/capture2.png" alt="erreur" width=500px>
           </div>
     </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="col-lg-12 col-md-12 col-xs-12">
     <p>Après avoir tapé <span class="couleur_vert">if</span> (condition) et appuyé sur entrée, l’éditeur va alors
         automatiquement indenter (décalage vers
         la droite) les lignes d’instructions suivantes. En effet, toutes les instructions
@@ -142,21 +75,23 @@
     <p><span class="ordi">Exemple :</span> le programme suivant affiche "candidat reçu" mais uniquement que celui-ci ait
         une
         moyenne supérieure ou égale à 10 :
-    </p>
+    </p></div>
     <iframe src="https://trinket.io/embed/python/4efc458943" width="100%" height="356" frameborder="0" marginwidth="0"
         marginheight="0" allowfullscreen>
     </iframe>
+    <div class="col-lg-12 col-md-12 col-xs-12">
     <h3>2.2) L’évaluation de la condition</h3>
     <p class="alinea">En fait la condition évaluée m>=10 renvoie un booléen : <span class="couleur_vert">True</span>
         (vrai) ou <span class="couleur_vert">False</span> (faux). Il est
         possible de le vérifier en rajoutant l’instruction suivante en fin de programme :
-    </p>
+    </p></div>
     <iframe src="https://trinket.io/embed/python/edba0afc61" width="100%" height="356" frameborder="0" marginwidth="0"
         marginheight="0" allowfullscreen>
     </iframe>
+    <div class="col-lg-12 col-md-12 col-xs-12">
     <h3>2.3) Opérateurs de comparaison et opérateurs logiques</h3>
     <p class="alinea">Afin d’écrire une condition, on utilise les opérateurs de comparaison suivants :
-    </p>
+    </p></div>
     <style type="text/css">
         .tftable {
             font-size: 12px;
@@ -226,12 +161,13 @@
             <td>différent de
         </tr>
     </table>
+    <div class="col-lg-12 col-md-12 col-xs-12">
     <p><span class="ordi">Attention :</span> l’égalité de deux valeurs est exprimée avec l’opérateur « == » et non « =
         ». Ce dernier
         est en effet l’opérateur d’affectation et ne doit pas être utilisé dans une condition.</p>
     <p class="alinea">Ces opérateurs de comparaisons peuvent être combinés aux opérateurs logiques (ou opérateurs
         booléens) suivants :
-    </p>
+    </p></div>
 
     <style type="text/css">
         .tftable {
@@ -288,107 +224,128 @@
             <td>si a est vraie, not(a) est fausse et inversement</td>
         </tr>
     </table>
-
+    <div class="col-lg-12 col-md-12 col-xs-12">
     <p><span class="ordi">Exemple :</span> le programme suivant détermine si le candidat aura une mention BIEN. Pour
         cela sa
         note doit être supérieure ou égale à 12 et inférieure strictement à 14 :</p>
+    </div>
 
     <iframe src="https://trinket.io/embed/python/857a617a40" width="100%" height="356" frameborder="0" marginwidth="0"
         marginheight="0" allowfullscreen></iframe>
 
+    <div class="col-lg-12 col-md-12 col-xs-12">
     <p class="alinea">Là encore, l’expression évaluée : m >= 10 and m < 12 renvoie un booléen :</p>
+    </div>
 
-            <iframe src="https://trinket.io/embed/python/d3fbe036b7" width="100%" height="356" frameborder="0"
-                marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <iframe src="https://trinket.io/embed/python/d3fbe036b7" width="100%" height="356" frameborder="0"
+        marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <p><span class="ordi">Remarque n°1 :</span> En python (contrairement au langage Java par exemple), la
+        condition if (m >= 12 and m < 14): peut être remplacée par la condition if (12 <=m < 14). </p>
 
-            <p><span class="ordi">Remarque n°1 :</span> En python (contrairement au langage Java par exemple), la
-                condition if (m >= 12 and m < 14): peut être remplacée par la condition if (12 <=m < 14). </p>
+    <p><span class="ordi">Remarque n°2 :</span> En python, la condition évaluée n’est pas
+        obligatoirement entre parenthèses, mais dans le cas
+        d’expressions complexes, les parenthèses sont vivement conseillées.</p>
 
-                    <p><span class="ordi">Remarque n°2 :</span> En python, la condition évaluée n’est pas
-                        obligatoirement entre parenthèses, mais dans le cas
-                        d’expressions complexes, les parenthèses sont vivement conseillées.</p>
+    <h3>2.4) L’instruction conditionnelle Si... Sinon ... (if. . . else. . .)</h3>
 
-                    <h3>2.4) L’instruction conditionnelle Si... Sinon ... (if. . . else. . .)</h3>
+    <p class="alinea">Dans certains cas on ne veut exécuter une séquence d’instructions que si la
+        condition évaluée est vraie et exécuter une autre séquence d’instruction si la condition évaluée
+        est fausse.</p></div>
+                    
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="text-center">
+            <img class="img-fluid" src="img/capture3.png" alt="erreur" width=500px>
+        </div>
 
-                    <p class="alinea">Dans certains cas on ne veut exécuter une séquence d’instructions que si la
-                        condition évaluée est vraie et exécuter une autre séquence d’instruction si la condition évaluée
-                        est fausse.
-                    </p>
+    <p><span class="ordi">Syntaxe :</span></p>
+        <div class="col-lg-12 col-md-12 col-xs-12">
+            <div class="text-center">
+        <img class="img-fluid" src="img/capture4.png" alt="erreur" width=500px>
+            </div>
 
-                    <img class="image" src="img/capture3.png" alt="erreur">
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <p><span class="ordi">Exemple :</span> le programme renvoie systématiquement une réponse : "candidat
+        reçu" (si condition évaluée vraie) sinon "candidat non reçu" si condition évaluée fausse) :</p></div>
 
-                    <p><span class="ordi">Syntaxe :</span></p>
+    <iframe src="https://trinket.io/embed/python/2fcfc2929a" width="100%" height="356" frameborder="0"
+        marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <h3>2.5) L’intruction elif</h3>
 
-                    <img class="image" src="img/capture4.png" alt="erreur">
+    <p class="alinea">Il est possible d’ajouter autant de conditions précises que l’on souhaite en
+        ajoutant le mot clé
+        <span class="couleur_vert">elif</span>, contraction de "else" et "if", qu’on pourrait traduire
+        par "sinon".
+        </p>
 
-                    <p><span class="ordi">Exemple :</span> le programme renvoie systématiquement une réponse : "candidat
-                        reçu" (si condition évaluée vraie) sinon "candidat non reçu" si condition évaluée fausse) :</p>
+    <h3>2.6) Tester autre chose que des nombres</h3>
 
-                    <iframe src="https://trinket.io/embed/python/2fcfc2929a" width="100%" height="356" frameborder="0"
-                        marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <p class="alinea">Il est possible de tester autre chose que des nombres, par exemple des caractères
+    </p></div>
 
-                    <h3>2.5) L’intruction elif</h3>
+    <iframe src="https://trinket.io/embed/python/834b047c83" width="100%" height="356" frameborder="0"
+        marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-                    <p class="alinea">Il est possible d’ajouter autant de conditions précises que l’on souhaite en
-                        ajoutant le mot clé
-                        <span class="couleur_vert">elif</span>, contraction de "else" et "if", qu’on pourrait traduire
-                        par "sinon".
-                    </p>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <p class="alinea">Il est même possible de savoir si la lettre tapée se trouve avant ou après une
+        lettre donnée dans
+        l’alphabet :</p></div>
 
-                    <h3>2.6) Tester autre chose que des nombres</h3>
+    <iframe src="https://trinket.io/embed/python/bf256974a1" width="100%" height="356" frameborder="0"
+        marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-                    <p class="alinea">Il est possible de tester autre chose que des nombres, par exemple des caractères
-                    </p>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <h2>3) Structures itératives</h2>
 
-                    <iframe src="https://trinket.io/embed/python/834b047c83" width="100%" height="356" frameborder="0"
-                        marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <h3>3.1) La boucle for (boucle inconditionnelle bornée)</h3>
 
-                    <p class="alinea">Il est même possible de savoir si la lettre tapée se trouve avant ou après une
-                        lettre donnée dans
-                        l’alphabet :</p>
+    <p class="alinea">Les traitements informatiques nécessitent souvent l’exécution de tâches
+        répétitives. La boucle for
+        permet d’effectuer un nombre de fois bien déterminé le corps de boucle (séquence
+        d’instructions).
+        Elle s’utilise généralement avec la fonction range qui permet de générer une séquence de nombres
+        entiers allant de 0 à n exclu.</p></div>
 
-                    <iframe src="https://trinket.io/embed/python/bf256974a1" width="100%" height="356" frameborder="0"
-                        marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="text-center">
+            <img class="img-fluid" src="img/capture5.png" alt="erreur" width=500px>
+        </div>
 
-                    <h2>3) Structures itératives</h2>
+    <p><span class="ordi">Syntaxe :</span></p>
 
-                    <h3>3.1) La boucle for (boucle inconditionnelle bornée)</h3>
+    <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="text-center">
+            <img class="img-fluid" src="img/capture6.png" alt="erreur" width=500px>
+        </div>
 
-                    <p class="alinea">Les traitements informatiques nécessitent souvent l’exécution de tâches
-                        répétitives. La boucle for
-                        permet d’effectuer un nombre de fois bien déterminé le corps de boucle (séquence
-                        d’instructions).
-                        Elle s’utilise généralement avec la fonction range qui permet de générer une séquence de nombres
-                        entiers allant de 0 à n exclu.</p>
-
-                    <img class="image" src="img/capture5.png" alt="erreur">
-
-                    <p><span class="ordi">Syntaxe :</span></p>
-
-                    <img class="image" src="img/capture6.png" alt="erreur">
-
-                    <p class="alinea">Après avoir tapé for i in range(n) et appuyé sur entrée, l’éditeur va alors
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <p class="alinea">Après avoir tapé for i in range(n) et appuyé sur entrée, l’éditeur va alors
                         automatiquement indenter
                         les lignes d’instructions suivantes. En effet, toutes les instructions à répéter doivent être
                         indentées,
                         et elles doivent avoir impérativement la même indentation.</p>
 
-                    <p><span class="ordi">Exemple 1 :</span> le code suivant répète
-                        10 fois l’instruction suivante</p>
+    <p><span class="ordi">Exemple 1 :</span> le code suivant répète
+                        10 fois l’instruction suivante</p></div>
 
-                    <iframe src="https://trinket.io/embed/python/aa645d63ac" width="100%" height="356" frameborder="0"
+    <iframe src="https://trinket.io/embed/python/aa645d63ac" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
-                    <p class="alinea">La fonction range peut accepter 3 arguments : range (valeur_début, valeur_fin,
+    <div class="col-lg-12 col-md-12 col-xs-12">
+    <p class="alinea">La fonction range peut accepter 3 arguments : range (valeur_début, valeur_fin,
                         pas). Les 3
                         arguments (valeur_début, valeur_fin, pas) sont obligatoirement des entiers !
                     </p>
 
-                    <p><span class="ordi">Exemple 2 :</span> Le programme suivant calcule \( x^n \)</p>
+                    <p><span class="ordi">Exemple 2 :</span> Le programme suivant calcule \( x^n \)</p></div>
 
                     <iframe src="https://trinket.io/embed/python/3082496ba3" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <h3>3.2) La boucle while (boucle conditionnelle non bornée)</h3>
 
                     <p class="alinea">La boucle while est assez peu différente de la boucle for. On l’utilise lorsque
@@ -401,13 +358,20 @@
                         dans le
                         test de poursuite est vraie. Dès que la condition devient fausse, elle passe aux instructions
                         suivantes.</p>
-
-                    <img class="image" src="img/capture7.png" alt="erreur">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="text-center">
+                    <img class="img-fluid" src="img/capture7.png" alt="erreur" width=500px>
+                        </div>
 
                     <p><span class="ordi">Syntaxe :</span></p>
 
-                    <img class="image" src="img/capture8.png" alt="erreur">
-
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="text-center">
+                    <img class="img-fluid" src="img/capture8.png" alt="erreur" width=500px>
+                        </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <p><span class="ordi">Attention :</span> lorsque que l’on utilise une boucle while, il faut
                         s’assurer que la condition évaluée dans
                         le test de poursuite deviendra fausse à un moment ou un autre, sinon ...le programme va boucler
@@ -416,21 +380,23 @@
 
                     <p><span class="ordi">Exemple :</span> Le programme suivant indique tous les entiers x dont le carré
                         est inférieur à un nombre
-                        n donné et indique également leur nombre (0 compris).</p>
+                        n donné et indique également leur nombre (0 compris).</p></div>
 
                     <iframe src="https://trinket.io/embed/python/fde7f47900" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <p><span class="ordi">Données :</span> pour choisir un nombre au "hasard", on utilise la fonction
                         randint() de la bibliothèque
                         random.
                     </p>
 
-                    <p><span class="ordi">Exemple :</span></p>
+                    <p><span class="ordi">Exemple :</span></p></div>
 
                     <iframe src="https://trinket.io/embed/python/c9c21a0c93" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <h3>3.3) Imbrication de boucles</h3>
 
                     <p class="alinea">Il est possible d’imbriquer des boucles, c’est-à-dire que dans le bloc d’une
@@ -442,11 +408,12 @@
                         afin qu’il affiche toutes les tables de multiplication de 1 jusqu’à 10. Pour cela, il suffit
                         d’imbriquer le
                         programme précédent à l’intérieur d’une boucle qui fait varier n de 1 à 10
-                    </p>
+                    </p></div>
 
                     <iframe src="https://trinket.io/embed/python/2bf096f1df" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <h3>3.4) Parcours d’une chaîne de caractères</h3>
 
                     <h4>a) Solution directe : parcours des éléments</h4>
@@ -460,21 +427,24 @@
                         insère un "." entre chaque
                         caractère :
                     </p>
+                    </div>
 
                     <iframe src="https://trinket.io/embed/python/038755581d" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+                    
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <h4>b) Solution indirecte : parcours des indices</h4>
 
                     <p class="alinea">Il est possible d’accéder à chaque caractère d’une chaîne à l’aide de son indice
                         de position. Le
                         premier caractère est toujours indexé 0.</p>
                     <p><span class="ordi">Exemple :</span> pour afficher le 1er et 5ème caractère d’une chaîne :
-                    </p>
+                    </p></div>
 
                     <iframe src="https://trinket.io/embed/python/56b2102009" width="100%" height="356" frameborder="0"
                         marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
+                    <div class="col-lg-12 col-md-12 col-xs-12">
                     <p><span class="ordi">Remarque :</span> la fonction <span class="couleur_vert">len()</span> retourne
                         la longueur de la chaîne.
                     </p>
@@ -484,7 +454,9 @@
                     <p class="alinea">Bravo, vous avez terminé le cours théorique ! Maintenant il faut pratiquer. Pour
                         cela cliquez sur ce <a href="page web reliée.html">lien</a> qui vous mènera à une série
                         d'exercices sur le contrôle de flux
-                        d'éxécution.</p>
+                        d'éxécution.</p></div>
+    </div>
+</div>
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
